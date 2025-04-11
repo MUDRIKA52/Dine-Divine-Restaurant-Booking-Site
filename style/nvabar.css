@@ -1,0 +1,178 @@
+/* Reset styles for consistent appearance */
+* {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Includes padding and border in element's total width/height */
+  }
+  
+  /* Header Styling */
+  header {
+    display: flex; /* Creates a flex container for logo and nav */
+    justify-content: space-between; /* Spaces out logo and navigation */
+    align-items: center; /* Vertically centers items */
+    padding: 1rem 2rem; /* Adds padding around the header */
+    background-color: rgba(255, 255, 255, 0.2); /* White with 50% opacity */
+
+   
+    color: rgb(0, 0, 0); /* Sets text color to white */
+    position: fixed; /* Fixes the header at the top of the page */
+    width: 100%; /* Makes the header span the entire width of the page */
+    z-index: 1000; /* Ensures the header appears above other elements */
+  }
+  /* Logo with Image */
+.header-content {
+    display: flex; /* Align logo image and text horizontally */
+    align-items: left; /* Vertically centers logo and text */
+  }
+  .logo-image {
+    width: 50px; /* Adjust the size of the logo image */
+    height: 50px; /* Ensure it's a square */
+    margin-right: 10px; /* Adds spacing between the image and text */
+  }
+  
+  /* Logo Styling */
+  header .logo {
+    font-size: 1.5rem; /* Sets the font size of the logo */
+    font-weight: bold; /* Makes the logo text bold */
+    color: rgb(3, 3, 3); /* Sets the logo text color to white */
+    margin-top:11px ;
+  }
+  
+  /* Navigation Links Styling */
+  header .nav-links {
+    display: flex; /* Displays links in a horizontal row on larger screens */
+    list-style: none; /* Removes default bullet points from the list */
+  }
+  
+  header .nav-links li {
+    margin-left: 1.5rem; /* Adds space between each navigation link */
+  }
+  
+  header .nav-links a {
+    text-decoration: none; /* Removes underline from links */
+    color: rgb(0, 0, 0); /* Sets the text color of links to white */
+    font-size: 1rem; /* Sets the font size of links */
+    font-weight: bold;/* sets font weight bold */
+    transition: color 0.3s ease; /* Adds a smooth color change effect on hover */
+  }
+  
+  header .nav-links a:hover {
+    color: #ff6347; /* Changes the link color to tomato on hover */
+    text-decoration: underline; /* Optionally underline on hover */
+  }
+  
+  /* Hamburger Menu Styling */
+  header .hamburger {
+    display: none; /* Hides the hamburger menu on larger screens */
+    flex-direction: column; /* Stacks the hamburger bars vertically */
+    cursor: pointer; /* Changes the cursor to pointer for better UX */
+  }
+  
+  header .hamburger span {
+    background-color: rgb(0, 0, 0); /* Sets the color of the hamburger bars */
+    height: 3px; /* Sets the height of each bar */
+    width: 25px; /* Sets the width of each bar */
+    margin: 4px 0; /* Adds spacing between bars */
+    transition: all 0.3s ease; /* Adds a smooth animation for bar changes */
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+   /* Navigation Links Styling */
+header .nav-links{
+    display: none; /* Hides the navigation links by default */
+    flex-direction: column; /* Stacks links vertically for the dropdown menu */
+    list-style: none; /* Removes default bullet points from the list */
+    position: absolute; /* Positions the dropdown relative to the header */
+    top: 60px; /* Places the dropdown below the header */
+    right: 2rem; /* Aligns the dropdown to the right side */
+    background-color: #333; /* Matches the header background color */
+    width: 200px; /* Sets a fixed width for the dropdown menu */
+    border-radius: 8px; /* Adds rounded corners for the dropdown */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow for better visibility */
+  }
+  
+  header .nav-links li {
+    padding: 1rem; /* Adds padding inside each dropdown item */
+    text-align: center; /* Centers the text */
+  }
+  header .nav-links li{
+    transform: scale(1.2) ; 
+  }
+ 
+  header .nav-links a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Sets the text color of links to white */
+    font-size: 1rem; /* Sets the font size of links */
+    transition: color 0.3s ease; /* Adds a smooth color change effect on hover */
+  }
+  
+  header .nav-links a:hover {
+    color: #00bfff; /* Changes hover color to light blue for dropdown links */
+    text-decoration: underline; /* Adds underline for dropdown hover effect */
+   
+  }
+  
+  
+    header .nav-links.active {
+      display: flex; /* Displays the dropdown menu when active */
+    }
+  
+    /* Hamburger Menu */
+    header .hamburger {
+      display: flex; /* Displays the hamburger menu on smaller screens */
+    }
+  }
+  /* Ensure the dropdown container is positioned correctly */
+.dropdown {
+  position: relative;
+  display: inline-block; /* Keeps it aligned with other nav items */
+}
+
+/* Style the dropdown menu */
+.dropdown-menu {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 100%; /* Places the dropdown right below the Login button */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the dropdown */
+  background-color: #e8a9a9;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Show dropdown on hover */
+@media (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Show dropdown on click for small screens */
+.dropdown.active .dropdown-menu {
+  display: block;
+}
+
+/* Style the Login button */
+.login-button {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+.login-button:hover {
+  color: #e2cbd7; /* Highlight on hover */
+}
+
+/* /* Ensure the navbar aligns properly */
+/* header .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+header .nav-links li {
+  position: relative;
+} */

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\style\nvabar.css"><!-- navbar css -->
+    <link rel="icon" href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\assets\images\interlocking-rings favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\style\footer.css">
+    <title>Sign In</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+   
+</head>
+<body>
+     <!-- Header -->
+     <header style="position: relative; background: transparent">
+        <!-- Logo Image -->
+        <div class="header-content">
+            <img src="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\assets\images\logo.png" alt="Logo" class="logo-image"> <!--  logo image -->
+        <div class="logo">Dine Divine</div><!-- Displays the restaurant' current name and logo -->
+        </div>
+    
+        <nav> <!-- Navigation links -->
+          <ul class="nav-links">
+            <li><a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\home.html">Home</a></li>
+            <li><a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\about.html">About</a></li>
+            <li><a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\menu.html">Menu</a></li>
+            <li><a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\order-online.html">Order Online</a></li>
+            <li><a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\reservation.html">Reservation</a></li>
+            <li><a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\contact.html">Contact</a></li>
+            <li class="dropdown nav-item">
+              <div><a href="#" class="dropdown-toggle">Login</a>
+                  <ul class="dropdown-menu">
+                      <li><a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\Sign in\sign_in.html">Sign In</a></li>
+                      <li><a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\Sign up\sign_up.html">Sign Up</a></li>
+                  </ul></div>
+          </ul>
+          <!-- Hamburger for small screens -->
+          <div class="hamburger">
+            <span></span><!--First bar of the hamburder menu -->
+            <span></span><!--Second bar of the hamburder menu -->
+            <span></span><!--Third bar of the hamburder menu -->
+          </div></nav>
+     
+     </header>
+    <div id="container">
+        <form id="login-form" action="#">
+            <!-- red alert for form error  -->
+            <div id="alert-red" style="display: none;">
+                <p id="error_message">This is a alert example and then you must put any example test</p>
+            </div>
+            <!-- green alert for form error  -->
+            <div id="alert-green" style="display: none;">
+                <p id="succes_message">This is a alert example and then you must put any example test</p>
+            </div>
+            <h2>Sign In</h2>
+            <p>Hey, Enter your details to login to your account</p>
+            <!-- email input -->
+            <input type="email" name="email" id="email" placeholder="Enter Email/Phone No">
+            <!-- password input -->
+            <input type="password" name="password" id="password" placeholder="Passcode">
+            <!-- <button type="button" id="hide-button">Hide</button> -->
+            <!-- suggestion field -->
+            <div class="suggestion-line">
+                <span>Don't have an account yet?</span><a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\Sign up\sign_up.html" class="link">Sign Up</a></p>
+            </div>
+            <button type="submit" form="login-form" value="submit">Sign in</button>
+        </form> 
+        &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+        <div class="form-image">
+            <img src="images/Screenshot 2024-12-28 165111.png" alt="3D-person" width="450">
+        </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Section -->
+        <div class="footer-left">
+          <h2><i class="fas fa-utensils"></i> Dine Divine</h2>
+          <p>Experience the finest dining with exquisite dishes and a cozy ambiance. Your satisfaction is our priority.</p>
+        </div>
+    
+        <!-- Middle Section -->
+        <div class="footer-middle">
+          <h3><i class="fas fa-link"></i> Quick Links</h3>
+          <ul>
+            <li><i class="fas fa-home"></i> <a href="home.html">Home</a></li>
+            <li><i class="fas fa-utensils"></i> <a href="menu.html">Menu</a></li>
+            <li><i class="fas fa-calendar-alt"></i> <a href="reservation.html">Reservation</a></li>
+            <li><i class="fas fa-phone-alt"></i> <a href="contact.html">Contact</a></li>
+            <li><i class="fas fa-user-shield"></i> <a href="#privacy-policy">Privacy Policy</a></li>
+            <li><i class="fas fa-file-contract"></i> <a href="#terms-of-service">Terms of Service</a></li>
+          </ul>
+        </div>
+    
+        <!-- Right Section -->
+        <div class="footer-right">
+          <h3><i class="fas fa-envelope"></i> Contact Us</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Food City</p>
+          <p><i class="fas fa-envelope"></i> Email: info@finedine.com</p>
+          <p><i class="fas fa-phone-alt"></i> Phone: +123 456 7890</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025  Dine Divine. All Rights Reserved.</p>
+      </div>
+    </footer>
+      
+       <script src="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\scripts\navbar.js"></script><!-- links the javascript file for navbar -->
+<script src="/js/script.js"></script>
+</body>
+</html>

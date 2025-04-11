@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\style\nvabar.css"><!-- navbar css -->
+    <link rel="icon" href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\assets\images\interlocking-rings favicon.svg" type="image/svg+xml">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\style\footer.css">
+    <title>Sign Up</title>
+  </head>
+  <body>
+     <!-- Header -->
+     <header style="position: absolute; background: transparent">
+      <!-- Logo Image -->
+      <div class="header-content">
+          <img src="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\assets\images\logo.png" alt="Logo" class="logo-image"> <!--  logo image -->
+      <div class="logo">Dine Divine</div><!-- Displays the restaurant' current name and logo -->
+      </div>
+  
+      <nav> <!-- Navigation links -->
+        <ul class="nav-links">
+          <li><a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\home.html">Home</a></li>
+            <li><a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\about.html">About</a></li>
+            <li><a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\menu.html">Menu</a></li>
+            <li><a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\order-online.html">Order Online</a></li>
+            <li><a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\reservation.html">Reservation</a></li>
+            <li><a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\contact.html">Contact</a></li>
+          <li class="dropdown nav-item">
+            <div><a href="#" class="dropdown-toggle">Login</a>
+                <ul class="dropdown-menu">
+                    <li><a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\Sign up\sign_up.html">Sign In</a></li>
+                    <li><a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\Sign in\sign_in.html">Sign Up</a></li>
+                </ul></div>
+        </ul>
+        <!-- Hamburger for small screens -->
+        <div class="hamburger">
+          <span></span><!--First bar of the hamburder menu -->
+          <span></span><!--Second bar of the hamburder menu -->
+          <span></span><!--Third bar of the hamburder menu -->
+        </div></nav>
+   
+   </header>
+    <div class="container">
+      <div class="content">
+        <div class="logo">
+          <img src="images/logo.svg" alt="" />
+        </div>
+        <div class="image"></div>
+        <div class="text">
+          Explore For Free<br />
+
+        </div>
+      </div>
+    
+      <form id="form">
+        <div class="social">
+          <br><br><br><br><br>
+          <div class="title">Get Started</div>
+          <div class="question">
+            Already Have an Account? <br />
+           
+            <a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\Sign in\sign_in.html" class="signin-link"><span>Sign in</span></a>
+          </div>
+
+          <div class="btn">
+            <div class="btn-1">
+              <img
+                src="https://img.icons8.com/color/30/000000/google-logo.png"
+              />
+            <a href="https://accounts.google.com/signin" class="gmail-link" target="_blank">Sign up</a>
+            </div>
+            <div class="btn-2">
+              <img
+                src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png"
+              />
+              <a href="https://www.facebook.com/login" class="social-link facebook-link" target="_blank">Sign up</a>
+            </div>
+          </div>
+
+          <div class="or">Or</div>
+        </div>
+
+        <!-- user name Input here-->
+
+        <div>
+          <label for="username">User Name</label>
+          <i class="fas fa-user"></i>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter your name"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <!-- /** 
+          * ! Email Input here
+         **/ -->
+
+        <div>
+          <label for="email">Email</label>
+          <i class="far fa-envelope"></i>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="abc@gmail.com"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <!-- /** 
+          * ! Password Input here
+         **/ -->
+
+        <div>
+          <label for="password">Password</label>
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password here"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <!-- /** 
+          * ! Password2 Input here
+         **/ -->
+
+         <div>
+          <label for="password">Re-Enter Password</label>
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            name="password"
+            id="password2"
+            placeholder="Re-Enter Password here"
+          />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Section -->
+        <div class="footer-left">
+          <h2><i class="fas fa-utensils"></i> Dine Divine</h2>
+          <p>Experience the finest dining with exquisite dishes and a cozy ambiance. Your satisfaction is our priority.</p>
+        </div>
+    
+        <!-- Middle Section -->
+        <div class="footer-middle">
+          <h3><i class="fas fa-link"></i> Quick Links</h3>
+          <ul>
+            <li><i class="fas fa-home"></i> <a href="home.html">Home</a></li>
+            <li><i class="fas fa-utensils"></i> <a href="menu.html">Menu</a></li>
+            <li><i class="fas fa-calendar-alt"></i> <a href="reservation.html">Reservation</a></li>
+            <li><i class="fas fa-phone-alt"></i> <a href="contact.html">Contact</a></li>
+            <li><i class="fas fa-user-shield"></i> <a href="#privacy-policy">Privacy Policy</a></li>
+            <li><i class="fas fa-file-contract"></i> <a href="#terms-of-service">Terms of Service</a></li>
+          </ul>
+        </div>
+    
+        <!-- Right Section -->
+        <div class="footer-right">
+          <h3><i class="fas fa-envelope"></i> Contact Us</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Food City</p>
+          <p><i class="fas fa-envelope"></i> Email: info@finedine.com</p>
+          <p><i class="fas fa-phone-alt"></i> Phone: +123 456 7890</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025  Dine Divine. All Rights Reserved.</p>
+      </div>
+    </footer>
+    
+     <script src="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\scripts\navbar.js"></script><!-- links the javascript file for navbar -->
+  </body>
+
+  <script src="main.js"></script>
+</html>

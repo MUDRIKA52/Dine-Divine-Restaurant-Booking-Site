@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IT+Trad:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* General Page Styling */
+body {
+    font-family:"Ubuntu", 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(135deg,rgb(237, 180, 165),rgb(234, 109, 109));
+   height: 100vh;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.order-container {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 50px auto;
+    transform: translateX(-100%); /* Initially hidden off-screen */
+    opacity: 0; /* Start with 0 opacity */
+    animation: slideIn 0.8s forwards, fadeIn 1s ease-in-out;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out; 
+    
+}
+/* Slide-in and fade-in effect */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%); /* Start off-screen to the left */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); /* End at normal position */
+        opacity: 1;
+    }
+}
+/* Fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    100% {
+        opacity: 1; /* Fade in to full opacity */
+    }
+}
+.order h2 {
+    font-size: 2rem;
+    color: #f3a847;
+}
+
+.order h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #f68787;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input:focus {
+    border-color: #f3a847;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+/* Cart Styling */
+.cart {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    margin-bottom: 10px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item .item-name {
+    font-weight: bold;
+}
+
+.cart-item .price {
+    font-weight: bold;
+    color: #f3a847;
+}
+
+.cart-item .quantity {
+    font-weight: normal;
+    color: #666;
+}
+
+.cart-item button {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #f3a847;
+}
+
+.cart-item button:hover {
+    color: #e27e2f;
+}
+
+/* Total Price Styling */
+.total h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#total-price {
+    color: #f3a847;
+}
+
+/* Order Button Styling */
+.btn-order {
+    padding: 12px 25px;
+    background-color: #f3a847;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-order:hover {
+    background-color: #e27e2f;
+    
+        transform: scale(1.1); /* Slightly increase the size when hovered */
+    }
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .order-container {
+        width: 90%;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item .price {
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dine Divine</title>
+    <link rel="stylesheet" href="style\reservation.css">
+    <link rel="stylesheet" href="style\nvabar.css">
+    <link rel="stylesheet" href="style\footer.css">
+    <link rel="icon" href="assets\images\interlocking-rings favicon.svg" type="image/svg+xml">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header style="position: relative;">
+        <div class="header-content">
+            <img src="assets\images\logo.png" alt="Logo" class="logo-image">
+            <div class="logo">Dine Divine</div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order-online.html">Order Online</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown nav-item">
+                    <div><a href="#" class="dropdown-toggle">Login</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Sign in\sign_in.html">Sign In</a></li>
+                            <li><a href="Sign up\sign_up.html">Sign Up</a></li>
+                        </ul></div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br><br>
+
+    <h2 class="centering">Book a table</h2>
+    <p class="centering">Reserve a table for a memorable dining experience!!</p>
+
+    <!-- Reservation Form Section -->
+    <br><br><br><br><br>
+    <section class="reservation-section">
+        <!-- Modify the form action to Google Form's action URL -->
+        <form id="reservation-form" action="https://docs.google.com/forms/d/e/1FAIpQLScDIV3DjjJNyRX1K-d9IIMEfs_XM1r8laGPgyviTs-qGPrDQg/formResponse" method="POST" >
+            
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="entry.1281489046" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="entry.1126293723" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="entry.477897670" required placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <label for="date">Select Date</label>
+                <input type="date" id="date" name="entry.34671100_year" value="2025-01-01" required><br>
+            </div>
+            <div class="form-group">
+                <label for="time">Select Time</label>
+                <input type="number" id="time" name="entry.1596950539_hour" placeholder="Hours" required>
+                <input style="margin: 6px;" type="number" name="entry.1596950539_minute" placeholder="Minutes" required>
+            </div>
+           
+            <div class="form-group">
+                <label for="requests">Special Requests (Optional)</label>
+                <textarea id="requests" name="entry.1544410361" rows="4" placeholder="Add any special requests here"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Reserve Table</button>
+        </form>
+
+        
+    </section>
+    <br><br>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("reservation-form").addEventListener("submit", function (event) {
+                event.preventDefault();
+                alert("Your table has been successfully booked!");
+                
+            });
+        });
+    </script>
+    
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2><i class="fas fa-utensils"></i> Dine Divine</h2>
+                <p>Experience the finest dining with exquisite dishes and a cozy ambiance. Your satisfaction is our priority.</p>
+            </div>
+            <div class="footer-middle">
+                <h3><i class="fas fa-link"></i> Quick Links</h3>
+                <ul>
+                    <li><i class="fas fa-home"></i> <a href="home.html">Home</a></li>
+                    <li><i class="fas fa-utensils"></i> <a href="menu.html">Menu</a></li>
+                    <li><i class="fas fa-calendar-alt"></i> <a href="reservation.html">Reservation</a></li>
+                    <li><i class="fas fa-phone-alt"></i> <a href="contact.html">Contact</a></li>
+                    <li><i class="fas fa-user-shield"></i> <a href="#privacy-policy">Privacy Policy</a></li>
+                    <li><i class="fas fa-file-contract"></i> <a href="#terms-of-service">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3><i class="fas fa-envelope"></i> Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Food City</p>
+                <p><i class="fas fa-envelope"></i> Email: info@finedine.com</p>
+                <p><i class="fas fa-phone-alt"></i> Phone: +123 456 7890</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dine Divine. All Rights Reserved.</p>
+        </div>
+    </footer>
+   
+</body>
+</html>

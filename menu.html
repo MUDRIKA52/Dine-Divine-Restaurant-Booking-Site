@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!-- Specifies the character encoding  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Makes the page responsive -->
+    <title>Dine Divine</title><!-- Tttle of page -->
+    <link rel="stylesheet" href="style\menu.css"><!-- homepage css -->
+    <link rel="stylesheet" href="style\nvabar.css"><!-- navbar css -->
+    <link rel="stylesheet" href="style\footer.css"><!-- footer css -->
+    <link rel="icon" href="assets\images\interlocking-rings favicon.svg" type="image/svg+xml">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <!-- Header -->
+    <header style="position: relative;">
+        <!-- Logo Image -->
+        <div class="header-content">
+            <img src="assets\images\logo.png" alt="Logo" class="logo-image"> <!--  logo image -->
+        <div class="logo">Dine Divine</div><!-- Displays the restaurant' current name and logo -->
+        </div>
+        <nav> <!-- Navigation links -->
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order-online.html">Order Online</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="dropdown nav-item">
+              <div><a href="#" class="dropdown-toggle">Login</a>
+                  <ul class="dropdown-menu">
+                      <li><a href="Sign in\sign_in.html">Sign In</a></li>
+                      <li><a href="Sign up\sign_up.html">Sign Up</a></li>
+                  </ul></div>
+          </ul>
+          <!-- Hamburger for small screens -->
+          <div class="hamburger">
+            <span></span><!--First bar of the hamburder menu -->
+            <span></span><!--Second bar of the hamburder menu -->
+            <span></span><!--Third bar of the hamburder menu -->
+          </div></nav>
+     
+     </header><br>
+     <!-- Menu Page Container -->
+     <div class="menu-container">
+        
+      <!-- Menu Page Container -->
+    <div class="menu-container">
+        
+      <!-- Menu Heading -->
+      <h1 class="menu-title">Our Menu</h1>
+
+      <!-- Filter Buttons for Categories -->
+      <div class="menu-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="starters">Starters</button>
+          <button class="filter-btn" data-filter="main-course">Main Course</button>
+          <button class="filter-btn" data-filter="desserts">Desserts</button>
+          <button class="filter-btn" data-filter="beverages">Beverages</button>
+      </div>
+
+      <!-- Menu Items Grid -->
+      <div class="menu-items">
+          
+          <!-- Starters (10 Dishes) -->
+          <div class="menu-item starters">
+              <img src="assets\images\tomato soup.jpg" alt="Tomato Soup">
+              <h3>Tomato Soup</h3>
+              <p>Freshly made with ripe tomatoes and aromatic spices.</p>
+              <span class="price">$5.99</span>
+              
+                <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <div class="menu-item starters">
+              <img src="assets\images\Spring roll.jpg" alt="Spring Rolls">
+              <h3>Spring Rolls</h3>
+              <p>Crunchy rolls filled with fresh veggies.</p>
+              <span class="price">$6.99</span>
+             
+                <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <!-- Add 8 more dishes for starters similarly -->
+          
+          <!-- Main Course (10 Dishes) -->
+          <div class="menu-item main-course">
+              <img src="assets\images\creamy alfredo pasta.jpg" alt="Creamy Alfredo Pasta">
+              <h3>Creamy Alfredo Pasta</h3>
+              <p>Pasta in rich Alfredo sauce topped with Parmesan.</p>
+              <span class="price">$12.99</span>
+             
+                <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <div class="menu-item main-course">
+              <img src="assets\images\chicken biryani.jpg" alt="Chicken Biryani">
+              <h3>Chicken Biryani</h3>
+              <p>Spiced rice with tender chicken pieces.</p>
+              <span class="price">$14.99</span>
+             
+                <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <!-- Add 8 more dishes for main course similarly -->
+
+          <!-- Desserts (10 Dishes) -->
+          <div class="menu-item desserts">
+              <img src="assets\images\chocolate cake.jpg" alt="Chocolate Cake">
+              <h3>Chocolate Cake</h3>
+              <p>Rich, moist chocolate cake with ganache.</p>
+              <span class="price">$8.99</span>
+
+                <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <div class="menu-item desserts">
+              <img src="assets\images\ice cream sundae.jpg" alt="Ice Cream Sundae">
+              <h3>Ice Cream Sundae</h3>
+              <p>Vanilla ice cream topped with caramel sauce.</p>
+              <span class="price">$7.99</span>
+            
+                <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <!-- Add 8 more dishes for desserts similarly -->
+
+          <!-- Beverages (10 Dishes) -->
+          <div class="menu-item beverages">
+              <img src="assets\images\hot coffee.jpg" alt="Hot Coffee">
+              <h3>Hot Coffee</h3>
+              <p>Freshly brewed coffee with a creamy texture.</p>
+              <span class="price">$4.99</span>
+              
+                <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <div class="menu-item beverages">
+              <img src="assets\images\mango shake.jpg" alt="Mango Shake">
+              <h3>Mango Shake</h3>
+              <p>Thick mango shake with ice cream.</p>
+              <span class="price">$5.99</span>
+              
+                <button class="add-to-cart">Add to Cart</button>
+          </div>
+
+          <!-- Add 8 more dishes for beverages similarly -->
+
+      </div> <!-- End of Menu Items Grid -->
+
+  </div> <!-- End of Menu Container -->
+      <!-- Cart Section -->
+      <div class="cart-container">
+          <h3>Your Cart</h3>
+          <ul id="cart-items">
+              <!-- Cart items will be listed here -->
+          </ul>
+          <button id="checkout">Proceed to Checkout</button>
+      </div>
+
+  </div> <!-- End of Menu Container -->
+
+  <!-- Modal for Viewing Dish Details -->
+  <div id="dish-modal" class="modal">
+      <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h2 id="modal-title"></h2>
+          <img id="modal-image" src="" alt="" />
+          <p id="modal-description"></p>
+          <p id="modal-price"></p>
+          <button id="add-to-cart-modal">Add to Cart</button>
+      </div>
+  </div>
+  <script src="scripts\menu.js"></script> <!-- Linking external JavaScript file -->
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Left Section -->
+      <div class="footer-left">
+        <h2><i class="fas fa-utensils"></i> Dine Divine</h2>
+        <p>Experience the finest dining with exquisite dishes and a cozy ambiance. Your satisfaction is our priority.</p>
+      </div>
+  
+      <!-- Middle Section -->
+      <div class="footer-middle">
+        <h3><i class="fas fa-link"></i> Quick Links</h3>
+        <ul>
+          <li><i class="fas fa-home"></i> <a href="home.html">Home</a></li>
+          <li><i class="fas fa-utensils"></i> <a href="menu.html">Menu</a></li>
+          <li><i class="fas fa-calendar-alt"></i> <a href="reservation.html">Reservation</a></li>
+          <li><i class="fas fa-phone-alt"></i> <a href="contact.html">Contact</a></li>
+          <li><i class="fas fa-user-shield"></i> <a href="#privacy-policy">Privacy Policy</a></li>
+          <li><i class="fas fa-file-contract"></i> <a href="#terms-of-service">Terms of Service</a></li>
+        </ul>
+      </div>
+  
+      <!-- Right Section -->
+      <div class="footer-right">
+        <h3><i class="fas fa-envelope"></i> Contact Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Food City</p>
+        <p><i class="fas fa-envelope"></i> Email: info@finedine.com</p>
+        <p><i class="fas fa-phone-alt"></i> Phone: +123 456 7890</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025  Dine Divine. All Rights Reserved.</p>
+    </div>
+  </footer>
+    
+     <script src="scripts\navbar.js"></script><!-- links the javascript file for navbar -->
+</body>
+</html>

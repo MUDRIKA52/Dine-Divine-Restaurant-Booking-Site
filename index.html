@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!-- Specifies the character encoding  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Makes the page responsive -->
+    <title>Dine Divine</title><!-- Tttle of page -->
+    <link rel="stylesheet" href="style\home_page.css"><!-- homepage css -->
+    <link rel="stylesheet" href="style\nvabar.css"><!-- navbar css -->
+    <link rel="icon" href="assets\images\interlocking-rings favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style\footer.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+     <!-- Header -->
+     <header>
+      <!-- Logo Image -->
+      <div class="header-content">
+          <img src="assets\images\logo.png" alt="Logo" class="logo-image"> <!--  logo image -->
+      <div class="logo">Dine Divine</div><!-- Displays the restaurant' current name and logo -->
+      </div>
+        <nav> <!-- Navigation links -->
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order-online.html">Order Online</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+           <!-- Dropdown for Login -->
+           <li class="dropdown nav-item">
+            <div><a href="#" class="dropdown-toggle">Login</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Sign in\sign_in.html">Sign In</a></li>
+                    <li><a href="Sign up\sign_up.html">Sign Up</a></li>
+                </ul></div>
+            
+        </li>
+          </ul>
+          <!-- Hamburger for small screens -->
+          <div class="hamburger">
+            <span></span><!--First bar of the hamburder menu -->
+            <span></span><!--Second bar of the hamburder menu -->
+            <span></span><!--Third bar of the hamburder menu -->
+          </div></nav>
+     
+     </header>
+     <!-- heros section begins here -->
+    <section class="hero">
+      <video  class="hero-video" autoplay muted loop><!-- video in background -->
+        <source src="assets\videos\hero section video.mp4" type="video/mp4">
+        Your browser does not support the video  tag
+      </video>
+      <div class="hero-content">
+      <div class="hero-content"><!-- animatedcontent to be displayed  -->
+        <h1 id="hero-headline"></h1>
+        <div class="cta-buttons"><!-- styling for buttons -->
+          <a href="reservation.html" class="cta-btn">Reserve a Table</a>
+          <a href="order-online.html" class="cta-btn">Order Online</a>
+        </div>
+      </div>
+    </section>
+   <section> <div class="featured-dishes">
+    <!-- Background Video -->
+    <video class="background-video" autoplay muted loop>
+      <source src="assets\videos\featured dishes.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+   
+   <section>
+   
+    <!-- Content of the Featured Dishes Section -->
+    <h2>Featured Dishes</h2>
+    <div class="dish-container">
+      <div class="dish-card">
+        <img src="assets\images\pasta.jpg" alt="Dish 1" class="dish-img">
+        <h3>Dish Name 1</h3>
+        <p class="dish-description">A short description of dish 1.</p>
+      </div>
+      <div class="dish-card">
+        <img src="assets\images\Salmon.jpg" alt="Dish 2" class="dish-img">
+        <h3>Dish Name 2</h3>
+        <p class="dish-description">A short description of dish 2.</p>
+      </div>
+      <div class="dish-card">
+        <img src="assets\images\Nan and chicken.jpg" alt="Dish 3" class="dish-img">
+        <h3>Dish Name 3</h3>
+        <p class="dish-description">A short description of dish 3.</p>
+      </div>
+      <div class="dish-card">
+        <img src="assets\images\dosa.jpg" alt="Dish 4" class="dish-img">
+        <h3>Dish Name 4</h3>
+        <p class="dish-description">A short description of dish 4.</p>
+      </div>
+    </div>
+    <a href="menu.html" class="view-menu-btn">View Full Menu</a>
+  </div></section>
+  <!-- Why Choose Us Section -->
+<section class="why-choose-us">
+  <video class="background-video" autoplay muted loop>
+      <source src="assets/videos/choice.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+
+  <!-- Background Video -->
+  <div class="container">
+      <h2>Why Choose Us!!</h2>
+      <div class="reasons">
+          <!-- Card 1 -->
+          <div class="reason-card">
+              <img src="assets/images/fresh-ingredients.jpg" alt="Fresh Ingredients Icon" class="reason-icon" />
+              <h3>Fresh Ingredients</h3>
+              <p>We use the freshest and highest-quality ingredients to prepare every dish.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="reason-card">
+              <img src="assets/images/chef.jpg" alt="Expert Chefs Icon" class="reason-icon" />
+              <h3>Expert Chefs</h3>
+              <p>Our chefs bring years of expertise to deliver the finest culinary experiences.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="reason-card">
+              <img src="assets/images/service.jpg" alt="Quick Service Icon" class="reason-icon" />
+              <h3>Quick Service</h3>
+              <p>Enjoy fast and friendly service to make your dining experience seamless.</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="reason-card">
+              <img src="assets/images/ambience.jpg" alt="Ambience Icon" class="reason-icon" />
+              <h3>Perfect Ambience</h3>
+              <p>Relax and enjoy your meals in our cozy and beautiful restaurant atmosphere.</p>
+          </div>
+      </div>
+  </div>
+</section> 
+
+<!-- Testimonial Section -->
+<section class="testimonial-section">
+  <!-- Background Video -->
+  <video autoplay muted loop class="background-video">
+      <source src="assets\videos\customers.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+
+  <!-- Dark Overlay -->
+  <div class="overlay"></div>
+
+  <h2>What Our Customers Say?</h2>
+
+  <!-- Testimonial Cards -->
+  <div class="testimonial-container">
+      
+      <!-- Card 1 -->
+      <div class="testimonial-card">
+          <img src="assets\images\customer1.jpg" alt="Customer 1" class="customer-img">
+          <h3>John Doe</h3>
+          <p>"The food and service were absolutely amazing. Can't wait to visit again!"</p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="testimonial-card">
+          <img src="assets\images\customer2.jpg" alt="Customer 2" class="customer-img">
+          <h3>Edward Smith</h3>
+          <p>"A delightful dining experience with an incredible ambiance."</p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="testimonial-card">
+          <img src="assets\images\customer3.jpg" alt="Customer 3" class="customer-img">
+          <h3>Emily Johnson</h3>
+          <p>"Absolutely loved it! The dishes were flavorful, and the staff was very welcoming."</p>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Left Section -->
+    <div class="footer-left">
+      <h2><i class="fas fa-utensils"></i> Dine Divine</h2>
+      <p>Experience the finest dining with exquisite dishes and a cozy ambiance. Your satisfaction is our priority.</p>
+    </div>
+
+    <!-- Middle Section -->
+    <div class="footer-middle">
+      <h3><i class="fas fa-link"></i> Quick Links</h3>
+      <ul>
+        <li><i class="fas fa-home"></i> <a href="home.html">Home</a></li>
+        <li><i class="fas fa-utensils"></i> <a href="menu.html">Menu</a></li>
+        <li><i class="fas fa-calendar-alt"></i> <a href="reservation.html">Reservation</a></li>
+        <li><i class="fas fa-phone-alt"></i> <a href="contact.html">Contact</a></li>
+        <li><i class="fas fa-user-shield"></i> <a href="#privacy-policy">Privacy Policy</a></li>
+        <li><i class="fas fa-file-contract"></i> <a href="#terms-of-service">Terms of Service</a></li>
+      </ul>
+    </div>
+
+    <!-- Right Section -->
+    <div class="footer-right">
+      <h3><i class="fas fa-envelope"></i> Contact Us</h3>
+      <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Food City</p>
+      <p><i class="fas fa-envelope"></i> Email: info@finedine.com</p>
+      <p><i class="fas fa-phone-alt"></i> Phone: +123 456 7890</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025  Dine Divine. All Rights Reserved.</p>
+  </div>
+</footer>
+    <script src="scripts\home.js"></script><!-- links the home javascript file -->
+     <script src="scripts\navbar.js"></script><!-- links the javascript file for navbar -->
+</body>
+</html>

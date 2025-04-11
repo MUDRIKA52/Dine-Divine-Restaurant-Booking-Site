@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* General Page Styling */
+body {
+    font-family:"Itim","Italianno", "Montserrat", serif,'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ec98a6, #fca4c9);
+    height: 100vh;
+    color: #0f0f0f;
+}
+
+/* Centering the Form Without Flexbox */
+.reservation-section {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 600px;
+    margin: 50 auto;
+    background-color: antiquewhite;
+    padding: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+/* Reservation Form Container */
+.reservation-container {
+    background: rgba(245, 143, 143, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+   
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Form Heading */
+.reservation-container h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #121212;
+    text-transform: uppercase;
+}
+
+/* Description */
+.reservation-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #0b0b0b;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Label Styling */
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #0b0b0b;
+    display: block;
+}
+.centering{
+    text-align: center;
+}
+/* Input, Select, Textarea Styling */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid black ;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #0b0b0b;
+    outline: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Focus & Hover Effect */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* Submit Button */
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: rgb(20, 20, 20);
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 117, 140, 0.5);
+}
+
+/* Button Hover Effect */
+.btn-submit:hover {
+    background: linear-gradient(135deg, #f14b67, #ec4087);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(255, 117, 140, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .reservation-section {
+        width: 90%;
+    }
+}
+.confirmation-message {
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+}
