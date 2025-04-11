@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\style\nvabar.css"><!-- navbar css -->
+   
     <link rel="icon" href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\assets\images\interlocking-rings favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\style\footer.css">
+  
     <title>Sign In</title>
     <link
       rel="stylesheet"
@@ -15,16 +14,21 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-   
+    <link rel="stylesheet" href="Sign in\css\style.css">
+    <link rel="stylesheet" href="style\nvabar.css"><!-- navbar css -->
+    <link rel="stylesheet" href="style\footer.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+    </style>
 </head>
 <body>
      <!-- Header -->
      <header style="position: relative; background: transparent">
         <!-- Logo Image -->
         <div class="header-content">
-            <img src="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\assets\images\logo.png" alt="Logo" class="logo-image"> <!--  logo image -->
-        <div class="logo">Dine Divine</div><!-- Displays the restaurant' current name and logo -->
-        </div>
+          <img src="../assets/images/logo.png" alt="Logo" class="logo-image">
+ <!--  logo image -->
+      <div class="logo">Dine Divine</div><!-- Displays the restaurant' current name and logo -->
+      </div>
     
         <nav> <!-- Navigation links -->
           <ul class="nav-links">
@@ -68,7 +72,7 @@
             <!-- <button type="button" id="hide-button">Hide</button> -->
             <!-- suggestion field -->
             <div class="suggestion-line">
-                <span>Don't have an account yet?</span><a href="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\Sign up\sign_up.html" class="link">Sign Up</a></p>
+                <span>Don't have an account yet?</span><a href="..\Sign up\sign_up.html" class="link">Sign Up</a></p>
             </div>
             <button type="submit" form="login-form" value="submit">Sign in</button>
         </form> 
@@ -119,5 +123,497 @@
       
        <script src="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\scripts\navbar.js"></script><!-- links the javascript file for navbar -->
 <script src="/js/script.js"></script>
+<style>/* Reset styles for consistent appearance */
+  * {
+      margin: 0; /* Removes default margin */
+      padding: 0; /* Removes default padding */
+      box-sizing: border-box; /* Includes padding and border in element's total width/height */
+    }
+    
+    /* Header Styling */
+    header {
+      display: flex; /* Creates a flex container for logo and nav */
+      justify-content: space-between; /* Spaces out logo and navigation */
+      align-items: center; /* Vertically centers items */
+      padding: 1rem 2rem; /* Adds padding around the header */
+      background-color: rgba(255, 255, 255, 0.2); /* White with 50% opacity */
+  
+     
+      color: rgb(0, 0, 0); /* Sets text color to white */
+      position: fixed; /* Fixes the header at the top of the page */
+      width: 100%; /* Makes the header span the entire width of the page */
+      z-index: 1000; /* Ensures the header appears above other elements */
+    }
+    /* Logo with Image */
+  .header-content {
+      display: flex; /* Align logo image and text horizontally */
+      align-items: left; /* Vertically centers logo and text */
+    }
+    .logo-image {
+      width: 50px; /* Adjust the size of the logo image */
+      height: 50px; /* Ensure it's a square */
+      margin-right: 10px; /* Adds spacing between the image and text */
+    }
+    
+    /* Logo Styling */
+    header .logo {
+      font-size: 1.5rem; /* Sets the font size of the logo */
+      font-weight: bold; /* Makes the logo text bold */
+      color: rgb(3, 3, 3); /* Sets the logo text color to white */
+      margin-top:11px ;
+    }
+    
+    /* Navigation Links Styling */
+    header .nav-links {
+      display: flex; /* Displays links in a horizontal row on larger screens */
+      list-style: none; /* Removes default bullet points from the list */
+    }
+    
+    header .nav-links li {
+      margin-left: 1.5rem; /* Adds space between each navigation link */
+    }
+    
+    header .nav-links a {
+      text-decoration: none; /* Removes underline from links */
+      color: rgb(0, 0, 0); /* Sets the text color of links to white */
+      font-size: 1rem; /* Sets the font size of links */
+      font-weight: bold;/* sets font weight bold */
+      transition: color 0.3s ease; /* Adds a smooth color change effect on hover */
+    }
+    
+    header .nav-links a:hover {
+      color: #ff6347; /* Changes the link color to tomato on hover */
+      text-decoration: underline; /* Optionally underline on hover */
+    }
+    
+    /* Hamburger Menu Styling */
+    header .hamburger {
+      display: none; /* Hides the hamburger menu on larger screens */
+      flex-direction: column; /* Stacks the hamburger bars vertically */
+      cursor: pointer; /* Changes the cursor to pointer for better UX */
+    }
+    
+    header .hamburger span {
+      background-color: rgb(0, 0, 0); /* Sets the color of the hamburger bars */
+      height: 3px; /* Sets the height of each bar */
+      width: 25px; /* Sets the width of each bar */
+      margin: 4px 0; /* Adds spacing between bars */
+      transition: all 0.3s ease; /* Adds a smooth animation for bar changes */
+    }
+    
+    /* Responsive Design for Smaller Screens */
+    @media (max-width: 768px) {
+     /* Navigation Links Styling */
+  header .nav-links{
+      display: none; /* Hides the navigation links by default */
+      flex-direction: column; /* Stacks links vertically for the dropdown menu */
+      list-style: none; /* Removes default bullet points from the list */
+      position: absolute; /* Positions the dropdown relative to the header */
+      top: 60px; /* Places the dropdown below the header */
+      right: 2rem; /* Aligns the dropdown to the right side */
+      background-color: #333; /* Matches the header background color */
+      width: 200px; /* Sets a fixed width for the dropdown menu */
+      border-radius: 8px; /* Adds rounded corners for the dropdown */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow for better visibility */
+    }
+    
+    header .nav-links li {
+      padding: 1rem; /* Adds padding inside each dropdown item */
+      text-align: center; /* Centers the text */
+    }
+    header .nav-links li{
+      transform: scale(1.2) ; 
+    }
+   
+    header .nav-links a {
+      text-decoration: none; /* Removes underline from links */
+      color: white; /* Sets the text color of links to white */
+      font-size: 1rem; /* Sets the font size of links */
+      transition: color 0.3s ease; /* Adds a smooth color change effect on hover */
+    }
+    
+    header .nav-links a:hover {
+      color: #00bfff; /* Changes hover color to light blue for dropdown links */
+      text-decoration: underline; /* Adds underline for dropdown hover effect */
+     
+    }
+    
+    
+      header .nav-links.active {
+        display: flex; /* Displays the dropdown menu when active */
+      }
+    
+      /* Hamburger Menu */
+      header .hamburger {
+        display: flex; /* Displays the hamburger menu on smaller screens */
+      }
+    }
+    /* Ensure the dropdown container is positioned correctly */
+  .dropdown {
+    position: relative;
+    display: inline-block; /* Keeps it aligned with other nav items */
+  }
+  
+  /* Style the dropdown menu */
+  .dropdown-menu {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%; /* Places the dropdown right below the Login button */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the dropdown */
+    background-color: #e8a9a9;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it stays on top */
+  }
+  .dropdown-menu li{
+    list-style: none;
+  }
+  
+  /* Show dropdown on hover */
+  @media (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  }
+  
+  /* Show dropdown on click for small screens */
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+  
+  /* Style the Login button */
+  .login-button {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+  }
+  
+  .login-button:hover {
+    color: #e2cbd7; /* Highlight on hover */
+  }
+  
+  /* /* Ensure the navbar aligns properly */
+  /* header .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  header .nav-links li {
+    position: relative;
+  } */
+  
+* {
+    margin: 0;
+    padding: 0;
+   
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+   /*  display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+#login-form {
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px; /* Allow the form to grow and shrink */
+    min-width: 280px;
+    display: flex;
+    flex-direction: column; /* Align inputs and button vertically */
+    align-items: center;
+}
+
+#login-form h2,
+p {
+    text-align: center;
+    margin: 10px;
+}
+
+#login-form input {
+    width: 100%;
+    max-width: 270px;
+    height: 40px;
+    margin: 15px 0;
+    padding-left: 10px;
+    border-radius: 8px;
+    border: 2px solid rgb(232, 230, 230);
+    text-align: left;
+}
+
+#login-form button {
+    width: 100%;
+    max-width: 270px;
+    height: 40px;
+    border-radius: 12px;
+    border-width: 0;
+    background-color: rgb(172, 60, 237);
+    color: white;
+    font-weight: bold;
+}
+
+#login-form button:hover {
+    background-color: rgb(194, 97, 255);
+}
+
+.suggestion-line {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.suggestion-line span,
+a {
+    text-align: right;
+    font-size: 10px;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+.suggestion-line a {
+    color: black;
+    font-weight: bold;
+}
+
+.form-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#alert-red,
+#alert-green {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+    margin: 9px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#alert-red {
+    background-color: rgb(241, 93, 93);
+}
+
+#alert-red p,
+#alert-green p {
+    color: white;
+    font-size: 12px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet and Mobile devices (783px or less) */
+@media (max-width: 783px) {
+    #login-form {
+        padding: 30px;
+        width: 90%;
+        min-width: 0; /* Remove min-width for better responsiveness */
+    }
+
+    .form-image img {
+        display: none; /* Hide image on tablet and mobile devices */
+    }
+
+    #container {
+        justify-content: center;
+    }
+}
+
+/* Mobile devices (480px or less) */
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+    }
+
+    #container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .form-image img {
+        display: none; /* Hide image on mobile */
+    }
+
+    #login-form {
+        padding: 50px;
+        width: 90%;
+    }
+
+    #login-form input {
+        max-width: 100%; /* Make inputs stretch to the full width */
+    }
+}
+/* Footer Section Styling */
+.footer {
+    background-color: #080808; /* Dark background */
+    color: #fff; /* White text */
+    padding: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 2rem;
+  }
+  
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    flex: 1; /* Equal spacing for all sections */
+    min-width: 250px; /* Ensures proper layout on smaller screens */
+  }
+  
+  /* Footer Left Section */
+  .footer-left h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+  }
+  
+  .footer-left p {
+    line-height: 1.5;
+  }
+  .footer-left p:hover{
+    color: #ffcc00; /* Gold hover effect */
+    text-decoration: underline;
+    transform: scale(1.2);
+  }
+  .footer-left h2:hover{
+    color: #ffcc00; /* Gold hover effect */
+    text-decoration: underline;
+    transform: scale(1.2);
+  }
+  /* Footer Middle Section */
+  .footer-middle h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+  }
+  .footer-middle h3:hover{ 
+    color: #ffcc00; /* Gold hover effect */
+    text-decoration: underline;
+    transform: scale(1.2);
+  }
+ 
+  .footer-middle ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-middle ul li {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+  }
+  
+  .footer-middle ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-middle ul li a:hover {
+    color: #ffcc00; /* Gold hover effect */
+    text-decoration: underline;
+    transform: scale(1.2);
+  }
+  
+  /* Footer Right Section */
+  .footer-right h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+  }
+  .footer-right h3:hover{
+    color: #ffcc00; /* Gold hover effect */
+    text-decoration: underline;
+    transform: scale(1.2);
+  }
+  
+  .footer-right p {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+  }
+  .footer-right p:hover{
+    color: #ffcc00; /* Gold hover effect */
+    text-decoration: underline;
+    transform: scale(1.2);
+  }
+  .social-icons a {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #f39c12; /* Highlight color */
+    transform: scale(1.2);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column; /* Stacks sections vertically on smaller screens */
+      text-align: center;
+    }
+  
+    .footer-right {
+      margin-top: 2rem;
+    }
+  }
+  
+      
+  </style>
 </body>
 </html>

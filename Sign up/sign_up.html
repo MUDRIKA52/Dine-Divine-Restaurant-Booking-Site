@@ -21,7 +21,8 @@
      <header style="position: absolute; background: transparent">
       <!-- Logo Image -->
       <div class="header-content">
-          <img src="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\assets\images\logo.png" alt="Logo" class="logo-image"> <!--  logo image -->
+        <img src="../assets/images/logo.png" alt="Logo" class="logo-image">
+        <!--  logo image -->
       <div class="logo">Dine Divine</div><!-- Displays the restaurant' current name and logo -->
       </div>
   
@@ -202,7 +203,546 @@
     </footer>
     
      <script src="C:\Users\Asus\Desktop\Restaurant Booking System With Payment integration\scripts\navbar.js"></script><!-- links the javascript file for navbar -->
-  </body>
+     <script src="main.js"></script>
+     <style>/**
+      changing default styles of brower
+     **/
+     
+     * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+     }
+     
+     body {
+       font-family: sans-serif;
+     }
+     
+     .container {
+       display: flex;
+       flex-direction: row;
+     }
+     
+     /**
+      style rules for content section
+     **/
+     
+     .content {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       background-color: #f2796e;
+       width: 55%;
+       min-height: 100vh;
+       padding: 10px 20px;
+     }
+     
+     .image {
+       background-image: url("./images/illustration.svg");
+       background-repeat: no-repeat;
+       background-size: contain;
+       background-position: center;
+       /* border: 2px solid black; */
+       height: 65%;
+     }
+     
+     .text {
+       text-align: center;
+       color: white;
+       font-size: 18px;
+     }
+     
+     /**
+      style rules for form section
+     **/
+     
+     form {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       width: 45%;
+       /* max-width: 400px; */
+       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+       padding: 50px;
+     }
+     
+     .title {
+       font-size: 25px;
+       font-weight: bold;
+       margin-bottom: 20px;
+     }
+     
+     form div input {
+       width: 100%;
+       height: 40px;
+       border-radius: 8px;
+       outline: none;
+       border: 2px solid #c4c4c4;
+       padding: 0 30px;
+       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+     }
+     
+     label {
+       display: block;
+       margin-bottom: 5px;
+     }
+     
+     form div {
+       position: relative;
+       margin-bottom: 15px;
+     }
+     
+     input:focus {
+       border: 2px solid #f2796e;
+     }
+     
+     /**
+     * ! style rules for social section
+     **/
+     
+     .btn {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       gap: 15px;
+     }
+     
+     .btn-1,
+     .btn-2 {
+       padding: 10px 5px;
+       width: 100%;
+       display: flex;
+       gap: 15px;
+       justify-content: center;
+       align-items: center;
+       border: 2px solid #c4c4c4;
+       border-radius: 8px;
+       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+       cursor: pointer;
+     }
+     
+     .btn-2 {
+       background-color: #4f70b5;
+       color: white;
+     }
+     
+     .or {
+       text-align: center;
+     }
+     
+     .question {
+       font-size: 15px;
+     }
+     
+     span {
+       color: #f2796e;
+       cursor: pointer;
+     }
+     
+     /**
+     * ! style rules for form icons
+     **/
+     
+     form div i {
+       position: absolute;
+       padding: 10px;
+     }
+     
+     .success-icon,
+     .failure-icon {
+       right: 0;
+       opacity: 0;
+     }
+     
+     .failure-icon,
+     .error {
+       color: red;
+     }
+     
+     .success-icon {
+       color: green;
+     }
+     
+     .error {
+       font-size: 14.5px;
+       margin-top: 5px;
+     }
+     
+     /**
+     * ! style rules for button 
+     **/
+     
+     button {
+       margin-top: 15px;
+       width: 100%;
+       height: 45px;
+       background-color: #f2796e;
+       border: 2px solid #f2796e;
+       border-radius: 8px;
+       color: #fff;
+       font-size: 20px;
+       cursor: pointer;
+       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+       transition: all 0.1s ease;
+     }
+     
+     button:hover {
+       opacity: 0.8;
+     }
+     
+     /**
+     * ! Media Queries are here
+     **/
+     
+     @media (max-width: 900px) {
+       .container {
+         flex-direction: column;
+       }
+     
+       form,
+       .content {
+         width: 100%;
+       }
+     
+       .btn {
+         flex-direction: column;
+       }
+       .image {
+         height: 70vh;
+       }
+     }
+     
+     @media (max-width: 425px) {
+       form {
+         padding: 20px;
+       }
+     }
+     /* Footer Section Styling */
+.footer {
+    background-color: #080808; /* Dark background */
+    color: #fff; /* White text */
+    padding: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 2rem;
+  }
+  
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    flex: 1; /* Equal spacing for all sections */
+    min-width: 250px; /* Ensures proper layout on smaller screens */
+  }
+  
+  /* Footer Left Section */
+  .footer-left h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+  }
+  
+  .footer-left p {
+    line-height: 1.5;
+  }
+  .footer-left p:hover{
+    color: #ffcc00; /* Gold hover effect */
+    text-decoration: underline;
+    transform: scale(1.2);
+  }
+  .footer-left h2:hover{
+    color: #ffcc00; /* Gold hover effect */
+    text-decoration: underline;
+    transform: scale(1.2);
+  }
+  /* Footer Middle Section */
+  .footer-middle h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+  }
+  .footer-middle h3:hover{ 
+    color: #ffcc00; /* Gold hover effect */
+    text-decoration: underline;
+    transform: scale(1.2);
+  }
+ 
+  .footer-middle ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-middle ul li {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+  }
+  
+  .footer-middle ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-middle ul li a:hover {
+    color: #ffcc00; /* Gold hover effect */
+    text-decoration: underline;
+    transform: scale(1.2);
+  }
+  
+  /* Footer Right Section */
+  .footer-right h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+  }
+  .footer-right h3:hover{
+    color: #ffcc00; /* Gold hover effect */
+    text-decoration: underline;
+    transform: scale(1.2);
+  }
+  
+  .footer-right p {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+  }
+  .footer-right p:hover{
+    color: #ffcc00; /* Gold hover effect */
+    text-decoration: underline;
+    transform: scale(1.2);
+  }
+  .social-icons a {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #f39c12; /* Highlight color */
+    transform: scale(1.2);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
 
-  <script src="main.js"></script>
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column; /* Stacks sections vertically on smaller screens */
+      text-align: center;
+    }
+  
+    .footer-right {
+      margin-top: 2rem;
+    }
+  }
+  
+      /* Reset styles for consistent appearance */
+* {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Includes padding and border in element's total width/height */
+  }
+  
+  /* Header Styling */
+  header {
+    display: flex; /* Creates a flex container for logo and nav */
+    justify-content: space-between; /* Spaces out logo and navigation */
+    align-items: center; /* Vertically centers items */
+    padding: 1rem 2rem; /* Adds padding around the header */
+    background-color: rgba(255, 255, 255, 0.2); /* White with 50% opacity */
+
+   
+    color: rgb(0, 0, 0); /* Sets text color to white */
+    position: fixed; /* Fixes the header at the top of the page */
+    width: 100%; /* Makes the header span the entire width of the page */
+    z-index: 1000; /* Ensures the header appears above other elements */
+  }
+  /* Logo with Image */
+.header-content {
+    display: flex; /* Align logo image and text horizontally */
+    align-items: left; /* Vertically centers logo and text */
+  }
+  .logo-image {
+    width: 50px; /* Adjust the size of the logo image */
+    height: 50px; /* Ensure it's a square */
+    margin-right: 10px; /* Adds spacing between the image and text */
+  }
+  
+  /* Logo Styling */
+  header .logo {
+    font-size: 1.5rem; /* Sets the font size of the logo */
+    font-weight: bold; /* Makes the logo text bold */
+    color: rgb(3, 3, 3); /* Sets the logo text color to white */
+    margin-top:11px ;
+  }
+  
+  /* Navigation Links Styling */
+  header .nav-links {
+    display: flex; /* Displays links in a horizontal row on larger screens */
+    list-style: none; /* Removes default bullet points from the list */
+  }
+  
+  header .nav-links li {
+    margin-left: 1.5rem; /* Adds space between each navigation link */
+  }
+  
+  header .nav-links a {
+    text-decoration: none; /* Removes underline from links */
+    color: rgb(0, 0, 0); /* Sets the text color of links to white */
+    font-size: 1rem; /* Sets the font size of links */
+    font-weight: bold;/* sets font weight bold */
+    transition: color 0.3s ease; /* Adds a smooth color change effect on hover */
+  }
+  
+  header .nav-links a:hover {
+    color: #ff6347; /* Changes the link color to tomato on hover */
+    text-decoration: underline; /* Optionally underline on hover */
+  }
+  
+  /* Hamburger Menu Styling */
+  header .hamburger {
+    display: none; /* Hides the hamburger menu on larger screens */
+    flex-direction: column; /* Stacks the hamburger bars vertically */
+    cursor: pointer; /* Changes the cursor to pointer for better UX */
+  }
+  
+  header .hamburger span {
+    background-color: rgb(0, 0, 0); /* Sets the color of the hamburger bars */
+    height: 3px; /* Sets the height of each bar */
+    width: 25px; /* Sets the width of each bar */
+    margin: 4px 0; /* Adds spacing between bars */
+    transition: all 0.3s ease; /* Adds a smooth animation for bar changes */
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+   /* Navigation Links Styling */
+header .nav-links{
+    display: none; /* Hides the navigation links by default */
+    flex-direction: column; /* Stacks links vertically for the dropdown menu */
+    list-style: none; /* Removes default bullet points from the list */
+    position: absolute; /* Positions the dropdown relative to the header */
+    top: 60px; /* Places the dropdown below the header */
+    right: 2rem; /* Aligns the dropdown to the right side */
+    background-color: #333; /* Matches the header background color */
+    width: 200px; /* Sets a fixed width for the dropdown menu */
+    border-radius: 8px; /* Adds rounded corners for the dropdown */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow for better visibility */
+  }
+  
+  header .nav-links li {
+    padding: 1rem; /* Adds padding inside each dropdown item */
+    text-align: center; /* Centers the text */
+  }
+  header .nav-links li{
+    transform: scale(1.2) ; 
+  }
+ 
+  header .nav-links a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Sets the text color of links to white */
+    font-size: 1rem; /* Sets the font size of links */
+    transition: color 0.3s ease; /* Adds a smooth color change effect on hover */
+  }
+  
+  header .nav-links a:hover {
+    color: #00bfff; /* Changes hover color to light blue for dropdown links */
+    text-decoration: underline; /* Adds underline for dropdown hover effect */
+   
+  }
+  
+  
+    header .nav-links.active {
+      display: flex; /* Displays the dropdown menu when active */
+    }
+  
+    /* Hamburger Menu */
+    header .hamburger {
+      display: flex; /* Displays the hamburger menu on smaller screens */
+    }
+  }
+  /* Ensure the dropdown container is positioned correctly */
+.dropdown {
+  position: relative;
+  display: inline-block; /* Keeps it aligned with other nav items */
+}
+
+/* Style the dropdown menu */
+.dropdown-menu {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 100%; /* Places the dropdown right below the Login button */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the dropdown */
+  background-color: #e8a9a9;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it stays on top */
+}
+.dropdown-menu li{
+  list-style: none;
+}
+
+/* Show dropdown on hover */
+@media (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Show dropdown on click for small screens */
+.dropdown.active .dropdown-menu {
+  display: block;
+}
+
+/* Style the Login button */
+.login-button {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+.login-button:hover {
+  color: #e2cbd7; /* Highlight on hover */
+}
+
+/* /* Ensure the navbar aligns properly */
+/* header .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+header .nav-links li {
+  position: relative;
+} */
+
+     </style>
+    </body>
+
+  
 </html>

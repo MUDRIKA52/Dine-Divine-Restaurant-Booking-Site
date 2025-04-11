@@ -142,6 +142,9 @@ header .nav-links{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000; /* Ensure it stays on top */
 }
+.dropdown-menu li{
+  list-style: none;
+}
 
 /* Show dropdown on hover */
 @media (min-width: 768px) {
